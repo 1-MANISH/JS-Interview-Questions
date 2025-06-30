@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+                body{
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                }
+
+                .common{
+                        padding:40px;
+                        box-sizing: border-box;
+                }
+                #grandParent{
+                        width: 400px;
+                        height: 400px;
+                        border: 1px solid black;
+                }
+                #parent{
+                          width: 300px;
+                        height: 300px;
+                        border: 1px solid rgb(176, 30, 30);
+                }
+                #child{
+                         width: 200px;
+                        height: 200px;
+                        border: 1px solid rgb(73, 192, 14);
+                }
+                #category{
+                        padding: 10px;
+                        border: 1px solid black;
+                        cursor: pointer;
+                }
+                #inputContainer{
+                        padding: 10px;
+                        border: 1px solid black;
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                }
+                #inputContainer input{
+                        margin: 10px;
+                        padding: 10px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+        </style>
+</head>
+<body>
+
+           <!-- event delegation -->
+          <!-- ex-1 -->
+           <!-- <div>
+                <ul id="category">
+                        <li id="laptops" category="laptops">Laptops</li>
+                        <li id="cameras" category="cameras">Cameras</li>
+                        <li id="phones" category="phones">Phones</li>
+
+                </ul>
+           </div> -->
+
+           <!-- ex-2 -->
+           <!-- <div id="inputContainer">
+                <input type="text" id="name" data-name placeholder="Search by name">
+                <input type="text" id="pan" data-pan placeholder="Search by pan">
+                <input type="text" id="mobile" data-mobile placeholder="Search by mobile">
+           </div> -->
+
+
+        <!-- event bubbling and capturing -->
+        <!-- 
+                <div id="grandParent" class="common">
+                Grand Parent
+                <div id="parent"  class="common">
+                        Parent
+                        <div id="child"  class="common">
+                                Child
+                        </div>
+                </div>
+        </div> -->
+
+
+
+        <!-- ------------------Just script--------------- -->
+        
+        <!-- async / defer -->
+        <!-- <script src="index.js" defer></script> --> 
+
+        <!-- call, apply and bind (method sharing)-->
+        <!-- <script src="index2.js" defer></script> -->
+
+        <!-- polly fill of above function(call, apply and bind) -->
+        <!-- <script src="index3.js" defer></script> -->
+
+        <!-- prototype and prototypal inheritance -->
+        <!-- <script src="index4.js" defer></script> -->
+
+        <!-- Currying in javascript -->
+        <!-- <script src="index5.js" defer></script> -->
+
+        <!-- event bubbling and capturing -->
+        <!-- <script src="index6.js" defer></script> -->
+
+        <!-- event delegation -->
+        <!-- <script src="index7.js" defer></script> -->
+
+        <!-- CORS , PReflight , Request , OPTIONS Methods -->
+        <script src="index8.js" defer></script>
+
+
+</body>
+</html>

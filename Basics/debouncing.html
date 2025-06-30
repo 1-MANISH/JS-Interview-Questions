@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Debouncing</title>
+        <style>
+                *{
+                         box-sizing: border-box;
+                }
+                body{
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                         
+                }
+                .searchContainer{
+                        width: 400px;
+                        padding: 10px;
+                        border: 1px solid black;
+                        display: flex;
+                        justify-content: center;
+                      
+                }
+                .searchContainer input{
+                        width: 100%;
+                        margin: 10px;
+                        padding: 10px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+        </style>
+</head>
+<body>
+
+       <div class="searchContainer">
+         <!-- <input type="text" id="searchQuery" onkeyup="betterFunction(`chil`)" placeholder="Search by name"> -->
+         <input type="text" id="searchQuery" placeholder="Search by name">
+       </div>
+
+        <script src="01.js" defer></script>
+</body>
+</html>
