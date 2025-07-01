@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Ordering App</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div class="container">
+
+            <h1>🍽️ Food Ordering App</h1>
+            
+            <div class="controls">
+                  <input type="text" id="searchInput" placeholder="Search restaurants..." />
+                  <select id="sortSelect">
+                        <option value="">Sort By</option>
+                        <option value="name">Name</option>
+                        <option value="rating">Rating</option>
+                        <option value="eta">ETA</option>
+                  </select>
+                  <select id="filterSelect" multiple>
+                        <option value="">Filter By</option>
+                  </select>
+            </div>
+
+            <div id="restaurantList" class="list">
+                <div id="loader" class="loader hidden">
+                        <img src="assets/loaderImage.gif" alt="Loading..." />
+                  </div>
+            </div>
+        
+      </div>
+
+      <script src="utils/debouncer.js" defer></script>
+      <script src="utils/localStorage.js" defer></script>
+      <script src="components/getRestoCard.js" defer></script>
+      <script src="components/renderRestoList.js" defer></script>
+      <script src="components/renderFilter.js" defer></script>
+      <script src="components/loader.js" defer></script>
+      <script src="index.js"  defer></script>
+</body>
+</html>

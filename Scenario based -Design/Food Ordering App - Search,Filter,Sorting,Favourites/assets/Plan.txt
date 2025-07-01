@@ -1,0 +1,49 @@
+
+
+Problem Statements -
+CReate a food ordering app , where we want to this all features and functionality using just vanila javascript
+
+Getting Restaurant List from api
+Render the list
+1. Search Restaurant (user can search anything)
+2. Filter Restaurant by [Tags]
+3. Sort Restaurant by [Rating,ETA ,name]
+4. Add Restaurant to favourites - if we click on favourite then only favourites should be visible
+
+
+Add on -
+1. Event Delegation when add to favourite btn clicked
+2. Debouncing in search
+3. Modular code
+4. Scalable  - pagination
+5. Readable code
+6. Responsive design
+
+My Plannning -
+1. getData(apiUrl-suggest anyone )
+2. getRestaurantCard(data={})- has fourite mark icon
+3. renderListView(data=[]) - till it load show loader
+4.Search - onkeyup - event delegation -  based on name
+5. Sorting onChange
+        sortBy = (ETA, rating,name)=>{
+                sortedData = data.sort((a,b)=>{
+                        
+                })      
+                renderListView(sortedData)  
+        }
+6. Filter onChange
+        filterBy = (tags[])=>{ 
+                filteredData = data.filter((item)=>{
+                        return tags.includes(item.tags)
+                })
+                renderListView(filteredData)
+        }
+7. Add to fav - saved to localstorage
+        addToFav = (id)=>{
+                let favData = localStorage.getItem("favourites") || "[]"
+                favData = JSON.parse(favData)
+                favData.push(id)
+                localStorage.setItem("favourites",JSON.stringify(favData))
+                renderListView(data) - to see that added to fav
+        }
+8. Pagination

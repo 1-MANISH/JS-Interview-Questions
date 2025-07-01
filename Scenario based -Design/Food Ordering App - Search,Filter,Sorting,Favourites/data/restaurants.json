@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1",
+    "name": "Pizza Palace",
+    "rating": 4.5,
+    "eta": 30,
+    "tags": ["Italian", "Fast Food"],
+    "image": "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg",
+    "location": "123 Main St, Anytown, USA"
+  },
+  {
+    "id": "2",
+    "name": "Green Bowl",
+    "rating": 4.8,
+    "eta": 20,
+    "tags": ["Healthy", "Salads"],
+    "image": "https://images.pexels.com/photos/6939752/pexels-photo-6939752.jpeg",
+    "location": "456 Elm St, Anytown, USA"
+  },
+  {
+    "id": "3",
+    "name": "Sushi Express",
+    "rating": 4.7,
+    "eta": 25,
+    "tags": ["Japanese", "Sushi","Fast Food"],
+    "image": "https://images.pexels.com/photos/6309923/pexels-photo-6309923.jpeg",
+    "location": "789 Oak St, Anytown, USA"
+  },
+  {
+    "id": "4",
+    "name": "Burger Joint",
+    "rating": 4.6,
+    "eta": 15,
+    "tags": ["American", "Burgers"],
+    "image": "https://images.pexels.com/photos/10980014/pexels-photo-10980014.jpeg",
+    "location": "321 Maple St, Anytown, USA"
+  },{
+    "id": "5",
+    "name": "Taco Joint",
+    "rating": 4.2,
+    "eta": 170,
+    "tags": ["Mexican", "Tacos"],
+    "image": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg",
+    "location": "321 Maple St, Anytown, USA"
+  },{
+    "id": "6",
+    "name": "Kebab Joint",
+    "rating": 3.9,
+    "eta": 16,
+    "tags": ["Mexican", "Tacos"],
+    "image": "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg",
+    "location": "321 Maple St, Anytown, USA"
+  }
+]
