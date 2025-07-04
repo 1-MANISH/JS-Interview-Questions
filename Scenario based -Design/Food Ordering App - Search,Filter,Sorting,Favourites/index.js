@@ -38,16 +38,22 @@ async function getFilterData(url){
 
 // Functions
 function getSearchData(query){
+        showLoader()
         const trimmedQuery = query.trim()
-        if(!trimmedQuery) {
+       
+        if(!trimmedQuery ){ 
                 filteredData = allData
         }
         filteredData = filteredData.filter((data)=>{
                 return data.name.toLowerCase().includes(trimmedQuery.toLowerCase())
         })
+        renderRestoList(filteredData)
+        hideLoader()
 }
 
 function getSortedFilterData (key){
+
+       showLoader()
         if(!key){
                 filteredData = allData 
         }
@@ -64,10 +70,12 @@ function getSortedFilterData (key){
                         return a.eta - b.eta // +ve to sort in accending order
                 })
         }
+        renderRestoList(filteredData)
+         hideLoader()
 }
 
 function getFilteredData(tags){
-
+        showLoader()
         if(tags.length === 0){
                 filteredData = allData
         }else{
@@ -77,25 +85,23 @@ function getFilteredData(tags){
                         }) ? true : false
                 })
         }
+        renderRestoList(filteredData)
+        hideLoader()
 }
 
+const betterSearchData = debouncer(getSearchData,300)
 
 // Events
 
 searchInput.addEventListener('keyup',(e)=>{
         const query = e.target.value
-        showLoader()
-        getSearchData(query)
-        renderRestoList(filteredData)
-        hideLoader()
+        betterSearchData(query)
 })
 
 sortSelect.addEventListener('change',(e)=>{
         const value = e.target.value
-        showLoader()
         getSortedFilterData(value)
-        renderRestoList(filteredData)
-         hideLoader()
+        
 })
 
 filterSelect.addEventListener('change',function(e){
@@ -105,11 +111,7 @@ filterSelect.addEventListener('change',function(e){
                 }
                 return acc
         },[])
-        
-        showLoader()
         getFilteredData(values)
-        renderRestoList(filteredData)
-         hideLoader()
 })
 
 restaurantListContainer.addEventListener('click',function(e){
